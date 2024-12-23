@@ -1,0 +1,58 @@
+/* 可変レイアウト
+------------------------------------------ */
+html {
+	font-size: calc(10 * 100vw / 390);
+	scroll-behavior: smooth;
+}
+
+@media (min-width:768px) {
+	html {
+		font-size: calc(10 * 100vw / 1440);
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 62.5%;
+	}
+}
+
+/* ベースのスタイル
+------------------------------------------ */
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+	line-height: 1.75;
+	color: #333;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a,
+a:hover,
+a i {
+	transition: opacity .3s;
+}
+
+@media (min-width: 768px) {
+	a:hover {
+		opacity: .6;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: bottom;
+}
+
+ul {
+	list-style: none;
+}
+
+/* ヘッダー
+------------------------------------------ */
+
