@@ -1,247 +1,1139 @@
 /* 可変レイアウト
 ------------------------------------------ */
 html {
-	font-size: calc(10 * 100vw / 390);
-	scroll-behavior: smooth;
+    font-size: calc(10 * 100vw / 390);
+    scroll-behavior: smooth;
 }
 
 @media (min-width:768px) {
-	html {
-		font-size: calc(10 * 100vw / 1440);
-	}
+    html {
+        font-size: calc(10 * 100vw / 1440);
+    }
 }
 
 @media (min-width: 1200px) {
-	html {
-		font-size: 62.5%;
-	}
+    html {
+        font-size: 62.5%;
+    }
 }
 
 /* ベースのスタイル
 ------------------------------------------ */
 body {
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	line-height: 1.75;
-	color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #333;
 }
 
 a {
-	color: #000;
-	text-decoration: none;
+    color: #000;
+    text-decoration: none;
 }
 
 a,
 a:hover,
 a i {
-	transition: opacity .3s;
+    transition: opacity .3s;
 }
 
 @media (min-width: 768px) {
-	a:hover {
-		opacity: .6;
-	}
+    a:hover {
+        opacity: .6;
+    }
 }
 
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
 }
 
 ul {
-	list-style: none;
+    list-style: none;
 }
 
 /* ヘッダー
 ------------------------------------------ */
 .header {
-	display: flex;
-	flex-direction: row;
-	column-gap: 0.6rem;
-	padding-top: 1rem;
-	padding-left: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.6rem;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width:768px) {
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        column-gap: 0.6rem;
+        padding-top: 1.7rem;
+        padding-left: .1rem;
+        margin-bottom: 2rem;
+        margin-left: .3rem;
+    }
 }
 
 .header__logo {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .header__logo-img {
-	width: 7.2rem;
-	color: #fa7da3;
+    width: 7.2rem;
+    color: #fa7da3;
 }
 
-.header__logo-text {
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	font-size: .547rem;
-	color: #fa7da3;
+@media (min-width:768px) {
+    .header__logo-img {
+        width: 9.7rem;
+        color: #fa7da3;
+    }
 }
 
 .button {
-	display: flex;
-	flex-direction: row;
-	column-gap: 1rem;
-	margin-top: .4rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    margin-top: .4rem;
+}
+
+@media (min-width:768px) {
+    .button {
+        display: flex;
+        flex-direction: row;
+        column-gap: 2.1rem;
+        margin-top: .4rem;
+    }
 }
 
 .button__pink {
-	display: flex;
-	flex-direction: row;
-	column-gap: 0.6rem;
-	width: 10.7rem;
-	height: 3.1rem;
-	background-color: #ec9191;
-	text-align: center;
-	border-radius: 1.55rem;
-	padding-top: .4rem;
-	padding-left: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.6rem;
+    width: 10.7rem;
+    height: 3.1rem;
+    background-color: #ec9191;
+    text-align: center;
+    border-radius: 1.55rem;
+    padding-top: .4rem;
+    padding-left: 1.2rem;
+}
+
+@media (min-width:768px) {
+    .button__pink {
+        display: flex;
+        flex-direction: row;
+        column-gap: 1.1rem;
+        width: 18.91rem;
+        height: 5.036rem;
+        background-color: #ec9191;
+        text-align: center;
+        border-radius: 2.518rem;
+        padding-top: 0.6rem;
+        padding-left: 2.5rem;
+        margin-left: .6rem;
+    }
 }
 
 .button__pink-text {
-	color: #fff;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	font-size: 1.2rem;
-	letter-spacing: 0.04rem;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+}
+
+@media (min-width:768px) {
+    .button__pink-text {
+        color: #fff;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        font-size: 2.112rem;
+        letter-spacing: 0rem;
+    }
 }
 
 .button__pink-arrow {
-	color: #fff;
-	width: .6rem;
-	height: 1rem;
-	margin-top: .7rem;
+    color: #fff;
+    height: 1rem;
+    margin-top: .7rem;
+}
+
+@media (min-width:768px) {
+    .button__pink-arrow {
+        color: #fff;
+        height: 1.636rem;
+        margin-top: 1.1rem;
+    }
 }
 
 .button__green {
-	display: flex;
-	flex-direction: row;
-	column-gap: 0.6rem;
-	width: 17.4rem;
-	height: 3.1rem;
-	background-color: #49c43d;
-	text-align: center;
-	border-radius: 1.55rem;
-	padding-top: .4rem;
-	padding-left: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.6rem;
+    width: 17.4rem;
+    height: 3.1rem;
+    background-color: #49c43d;
+    text-align: center;
+    border-radius: 1.55rem;
+    padding-top: .4rem;
+    padding-left: 1.2rem;
+}
+
+@media (min-width:768px) {
+    .button__green {
+        display: flex;
+        flex-direction: row;
+        column-gap: .8rem;
+        width: 29.549rem;
+        height: 5.036rem;
+        background-color: #49c43d;
+        text-align: center;
+        border-radius: 2.518rem;
+        padding-top: .4rem;
+        padding-left: 2.4rem;
+        margin-right: .3rem;
+    }
 }
 
 .button__green-text {
-	color: #fff;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	font-size: 1.2rem;
-	letter-spacing: 0.04rem;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    letter-spacing: 0.04rem;
+}
+
+@media (min-width:768px) {
+    .button__green-text {
+        color: #fff;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        font-size: 2.112rem;
+        letter-spacing: -0.03rem;
+    }
 }
 
 .button__green-text-free {
-	color: #fff;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	font-size: 1rem;
-	letter-spacing: 0.04rem;
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 0.04rem;
+}
+
+@media (min-width:768px) {
+    .button__green-text-free {
+        color: #fff;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
+        font-size: 1.787rem;
+    }
 }
 
 .button__green-arrow {
-	color: #fff;
-	font-size: .6rem;
-	height: 1rem;
-	margin-top: .7rem;
+    color: #fff;
+    font-size: .6rem;
+    height: 1rem;
+    margin-top: .7rem;
+}
+
+@media (min-width:768px) {
+    .button__green-arrow {
+        color: #fff;
+        font-size: .6rem;
+        height: 1.636rem;
+        margin-top: 1.3rem;
+    }
 }
 
 
 /* カバー
 ------------------------------------------ */
 .cover {
-	background-image: url("/assets/image/cover_women_sp.png");
-	height: 37.8rem;
-	background-position: center;
-	background-size: cover;
+    background-color: #fa7da3;
+    height: 31.4rem;
+    position: relative;
 }
 
 @media (min-width: 768px) {
-	.cover {
-		background-image: url("/assets/image/cover_women_pc.png");
-		height: 61.2rem;
-		background-position: center;
-		background-size: cover;
-	}
+    .cover {
+        background-color: #fa7da3;
+        height: 61.2rem;
+    }
 }
 
-.cover__container{
-	display: flex;
-	flex-direction: row;
-
+.cover__container-catch {
+    margin-bottom: 2rem;
 }
 
-.cover__container-left-first {
-	color: #fff;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	font-size: 4.2rem;
+.cover__container-left-text {
+    position: absolute;
+    width: 16.5rem;
+    top: 6.9%;
+    left: 4.9%
 }
 
-.cover__container-left-second {
-	color: #fff;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	font-size: 1.8rem;
+
+.cover__container-catch-right {
+    display: flex;
+    flex-direction: row;
+    background-color: #fca4bf;
+    width: 18.8rem;
+    margin-left: auto;
+    padding-top: .94rem;
+    padding-left: 2.7rem;
+    padding-bottom: 2.1rem;
+    column-gap: 1rem;
+    margin-bottom: .4rem;
 }
 
-.cover__container-right-under{
-	display: flex;
-	flex-direction: column;
-	row-gap: 1.2rem;
+.cover__container-right-text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+    margin-right: 2.6rem;
 }
 
-.cover__container-right-under-text{
-	color: #fff;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 400;
-	font-size: 1.8rem;
-	height: 3.5rem;
-	width: 13.3rem;
-	border: .1rem solid #fff;
-	text-align: center;
+.cover__container-right-text-container-text {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    height: 3.5rem;
+    width: 13.3rem;
+    border: .1rem solid #fff;
+    text-align: center;
+    margin-left: auto
 }
 
-.cover__container-right-over-right{
-	color: #fffd7a;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 700;
-	font-size: 7.6rem;
+.cover__container-catch-right-price {
+    color: #fffd7a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 7.6rem;
+    line-height: 1;
 }
 
-.cover__container-right-over-right-text{
-	color: #fffd7a;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 700;
-	font-size: 7.6rem;
+.cover__container-catch-right-price-yen {
+    color: #fffd7a;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 3.6rem;
+    margin-left: auto
 }
 
-.cover__container-right-over-left{
-	display: flex;
-	flex-direction: row;
+.cover__container-right-over-left {
+    display: flex;
+    flex-direction: row;
 }
 
-.cover__container-right-over-left-text{
-	display: flex;
-	flex-direction: column;
+.cover__container-catch-right-over {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    row-gap: .7rem;
 }
 
-.cover__container-right-over-left-text-first{
-	background-color: #fff;
-	color: #fa7da3;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 700;
-	font-size: 1.3rem;
+.cover__container-catch-right-over-first {
+    background-color: #fff;
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: center;
+    width: 97.3%;
+    height: 38.1%;
+    padding-left: .1rem;
 }
 
-.cover__container-right-over-left-text-second{
-	color: #fff;
-	font-family: 'Noto Sans JP', sans-serif;
-	font-weight: 700;
-	font-size: 2.4rem;
+.cover__container-catch-right-over-second {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 1;
+}
+
+.cover__container-catch-left--text {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    display: block;
+    text-align: end;
+    margin-right: 2.5rem;
+}
+
+.cover__container-catch-left--text--yen {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+.cover__container-left-women {
+    position: absolute;
+    top: 31.2%;
+    left: 1%;
+    width: 20.9rem;
+}
+
+
+/*今だけ
+------------------------------------------ */
+
+.now__container {
+    background-color: #fffedd;
+    padding-bottom: 1.4rem;
+    padding-top: 1.5rem;
+    padding-left: 2.1rem;
+    padding-right: 1.9rem;
+}
+
+.now__container-course {
+    border: .1rem solid #fa7da3;
+    border-radius: 1rem;
+    margin-bottom: .6rem;
+}
+
+.now__container-text {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    justify-content: center;
+    margin-bottom: .9rem;
+}
+
+.now__container-text::after {
+    content: "";
+    width: 0.225rem;
+    height: 2.675rem;
+    display: block;
+    background-color: #fa7da3;
+    transform: rotate(30deg);
+    margin-top: .3rem;
+}
+
+.now__container-text::before {
+    content: "";
+    width: 0.225rem;
+    height: 2.675rem;
+    display: block;
+    background-color: #fa7da3;
+    transform: rotate(-30deg);
+    margin-top: .5rem;
+}
+
+.now__container-course-facial {
+    color: #fff;
+    background-color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 1;
+    padding-top: .4rem;
+    padding-bottom: .7rem;
+    border-radius: .9rem .9rem 0 0;
+}
+
+.now__container-course-present {
+    color: #fa7da3;
+    background-color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 4.2rem;
+    text-align: center;
+    line-height: 1;
+    padding-top: .6rem;
+    padding-left: 1.1rem;
+    padding-bottom: 1.2rem;
+    border-radius: 0 0 .9rem .9rem;
+}
+
+.now__container-course-present--number {
+    color: #fa7da3;
+    background-color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.now__container-undertext {
+    color: #333;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: .6rem;
+}
+
+/*cta
+------------------------------------------ */
+
+.cta {
+    padding-top: 1rem;
+    margin-bottom: 2.95rem;
+}
+
+.cta__text {
+    color: #fa7da3;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    letter-spacing: .2rem;
+    margin-left: 1.1rem;
+    margin-bottom: .6rem;
+}
+
+.cta__button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #49c43d;
+    width: 35rem;
+    height: 8rem;
+    border-radius: 4rem;
+    column-gap: .7rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 6.2rem;
+    padding-top: 1.1rem;
+    padding-right: 2.3rem;
+}
+
+.cta__button-text {
+    color: #fff;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 2.1rem;
+    width: 20.6rem;
+    line-height: 1.3;
+    letter-spacing: 0.18rem;
+}
+
+.button__button-arrow {
+    color: #fff;
+    width: 1.2rem;
+    height: 1.9rem;
+    margin-top: 1.9rem;
+}
+
+.cta-last {
+    margin-bottom: 4.1rem;
+}
+
+/*体験
+------------------------------------------ */
+
+.trial {
+    padding-left: 2rem;
+    padding-right: 1.9rem;
+    margin-bottom: 3.6rem;
+}
+
+.trial__container-title {
+    color: #50bfff;
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 1.7rem;
+    border-top: .1rem solid #50bfff;
+    border-bottom: .1rem solid #50bfff;
+    line-height: 2.3;
+    letter-spacing: .2rem;
+    margin-left: .2rem;
+    margin-bottom: .9rem;
+}
+
+.trial__container-detail {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-left: .1rem;
+}
+
+.trial__container-detail-time {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.trial__container-face {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-left: .1rem;
+}
+
+.trial__container-face-time {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+/*Point
+------------------------------------------ */
+.point {
+    background-color: #fdf0f5;
+    padding-top: 2.7rem;
+    padding-left: 2.1rem;
+    padding-right: 1.9rem;
+    padding-bottom: .1rem;
+    margin-bottom: 1rem;
+}
+
+.point__container {
+    padding-top: .3rem;
+}
+
+.point__container-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.point__container-title-choice {
+    color: #4d2b1b;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.point__container-title-point {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.7;
+}
+
+/*Point1
+------------------------------------------ */
+.point__container-point1 {
+    border: .1rem solid #fa7da3;
+    border-radius: 1.1rem;
+    margin-bottom: 3.1rem;
+}
+
+.point__container-point1-title {
+    background-color: #fa7da3;
+    text-align: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.point__container-point1-title-text {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.point__container-point1-detail-text {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.55;
+    letter-spacing: -0.07rem;
+    margin-bottom: 1.2rem;
+}
+
+.point__container-point1-detail {
+    padding-left: 2rem;
+    padding-right: 2.2rem;
+    padding-top: 1.3rem;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.point__container-point1-detail-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 2.2rem;
+    align-items: center;
+    margin-bottom: .3rem;
+}
+
+.point__container-point1-detail-wrapper-logo {
+    width: 14.3rem;
+    height: 8.4rem;
+    background-color: #fff;
+    text-align: center;
+    border: .1rem solid #fa7da3;
+    padding-top: 2.2rem;
+    padding-left: .4rem;
+}
+
+
+.point__container-point1-detail-wrapper-salona {
+    width: 14.3rem;
+    height: 8.4rem;
+    background-color: #fdf0f5;
+    text-align: center;
+    border: .1rem solid #666;
+    padding-top: 24px;
+    letter-spacing: .1rem;
+    padding-left: .1rem;
+}
+
+.point__container-point1-detail-wrapper-logo-img {
+    width: 7.1rem;
+}
+
+.point__container-point1-detail-wrapper-salona-text {
+    color: #433e3f;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.point__container-point1-detail-explanation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5.2rem;
+}
+
+.point__container-point1-detail-explanation-text {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+/*Point2
+------------------------------------------ */
+.point__container-point2 {
+    border-radius: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.point__container-point2-title {
+    background-color: #fa7da3;
+    border: .1rem solid #fa7da3;
+    text-align: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.point__container-point2-title-text {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.point__container-point2-detail {
+    padding-top: 1.3rem;
+    background-color: #fff;
+    border: .1rem solid #fa7da3;
+    border-radius: 0 0 1rem 1rem;
+    padding-bottom: 1.5rem;
+    width: 35rem;
+    margin-bottom: 3rem;
+}
+
+.point__container-point2-detail-plan-text {
+    padding-left: 2rem;
+    padding-right: 1.9rem;
+}
+
+.point__container-point2-detail-plan-text {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.53;
+    margin-bottom: 1.7rem;
+}
+
+.point__container-point2-detail-wrapper {
+    position: relative;
+}
+
+.point__container-point2-detail-wrapper-text {
+    color: #4d2c1c;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.point__container-point2-detail-wrapper-body {
+    padding-left: 2rem;
+    padding-right: 1.9rem;
+    margin-bottom: 4.1rem;
+}
+
+.point__container-point2-detail-wrapper-body-img {
+    position: relative;
+    height: 35.1rem;
+    width: 31.1rem;
+}
+
+.point__container-point2-detail-wrapper-body-img1 {
+    position: absolute;
+    left: 37.9%;
+}
+
+.point__container-point2-detail-wrapper-body-img2 {
+    position: absolute;
+    top: 25%;
+    left: 82.7%;
+}
+
+.point__container-point2-detail-wrapper-body-img3 {
+    position: absolute;
+    top: 36.7%;
+    left: 86.6%;
+}
+
+.point__container-point2-detail-wrapper-body-img4 {
+    position: absolute;
+    top: 66.1%;
+    left: 82.6%;
+}
+
+.point__container-point2-detail-plan-partial-text {
+    color: #4d2c1c;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 2.2rem;
+}
+
+.point__container-point2-detail-plan-partial-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 1.6rem;
+    column-gap: 1.2rem;
+    padding-left: 1.2rem;
+    padding-right: 1.4rem;
+}
+
+.point__container-point2-detail-plan-partial-container-box {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% - 2.4rem) / 3);
+    row-gap: .2rem;
+}
+
+.point__container-point2-detail-plan-partial-container-box-text {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 600;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+.point__container-point2-detail-plan-partial-container-box-img {
+    width: 10rem
+}
+
+
+
+/*Point3
+------------------------------------------ */
+.point__container-point3 {
+    border: .1rem solid #fa7da3;
+    border-radius: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.point__container-point3-title {
+    background-color: #fa7da3;
+    text-align: center;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.point__container-point3-title-text {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.point__container-point3-detail {
+    padding-left: 2.1rem;
+    padding-right: 2rem;
+    padding-top: 1.5rem;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    padding-bottom: .5rem;
+}
+
+.point__container-point3-detail-text {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.53;
+    margin-bottom: 1.2rem;
+}
+
+/*２つのコース
+------------------------------------------ */
+.course {
+    background-color: #fff;
+    padding-top: .9rem;
+    padding-left: 2.1rem;
+    padding-right: 1.9rem;
+    padding-bottom: .1rem;
+    margin-bottom: 2.2rem;
+}
+
+.course__container {
+    padding-top: .3rem;
+}
+
+.course__container-title {
+    text-align: center;
+    margin-bottom: 1.9rem;
+}
+
+
+.course__container-title-choice {
+    color: #4d2b1b;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-left: .5rem;
+}
+
+.course__container-title-course {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.7;
+}
+
+/*ボディーコース
+------------------------------------------ */
+.course__container-body {
+    border: .1rem solid #fa7da3;
+    border-radius: 1rem;
+    margin-bottom: 3.1rem;
+}
+
+.course__container-body-title {
+    background-color: #fdf0f5;
+    border-radius: 1.1rem 1.1rem 0 0;
+    padding-left: 2.1rem;
+    padding-right: 2rem;
+}
+
+.course__container-body-detail {
+    padding-left: 2.1rem;
+    padding-right: 2rem;
+}
+
+.course__container-body-title-text {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: .6rem;
+    margin-right: .1rem;
+    letter-spacing: .05rem;
+    padding-bottom: .7rem;
+    margin-bottom: 1.5rem;
+}
+
+.course__container-body-detail-text {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+
+.course__container-body-image {
+    padding-left: 1.9rem;
+    padding-right: 2rem;
+    padding-bottom: 1.9rem;
+}
+
+.course__container-body-image-img {
+    width: 31rem;
+}
+
+
+/*フェイシャルーコース
+------------------------------------------ */
+.course__container-face {
+    border: .1rem solid #fa7da3;
+    border-radius: 1rem;
+}
+
+.course__container-face-title {
+    background-color: #fdf0f5;
+    border-radius: 1.1rem 1.1rem 0 0;
+    padding-left: 2.1rem;
+    padding-right: 2rem;
+}
+
+.course__container-face-detail {
+    padding-left: 2.1rem;
+    padding-right: 2rem;
+}
+
+.course__container-face-title-text {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 0.6rem;
+    margin-right: 0.6rem;
+    letter-spacing: .0rem;
+    padding-bottom: .7rem;
+    margin-bottom: 1.5rem;
+}
+
+.course__container-face-detail-text {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+}
+
+.course__container-face-image {
+    padding-left: 1.9rem;
+    padding-right: 2rem;
+    padding-bottom: 1.9rem;
+}
+
+.course__container-face-image-img {
+    width: 31rem;
+}
+
+
+/*お客様の声
+------------------------------------------ */
+.voice {
+    background-color: #fdf0f5;
+    margin-bottom: 1.2rem;
+}
+
+.voice__container {
+    background-color: #fdf0f5;
+    padding-top: 2rem;
+    padding-bottom: 2.4rem;
+}
+
+.voice__container-title {
+    text-align: center;
+    margin-bottom: 1.6rem;
+}
+
+.voice__container-title-customer {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.7;
+}
+
+
+/*お客様の声slick
+------------------------------------------ */
+.voice__container-customer-slick-box {
+    margin: 0 .75rem 0 .75rem;
+    border: .1rem solid #fa7da3;
+    border-radius: 1.1rem;
+}
+
+.voice__container-customer-slick-box-text {
+    background-color: #fa7da3;
+    padding: 1.2rem 0 1.5rem 0;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.voice__container-customer-slick-box-text-course {
+    color: #fff;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.801rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.voice__container-customer-slick-box-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    column-gap: 1.5rem;
+    padding: 1.4rem 1.3rem 1.4rem 1.8rem;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.voice__container-customer-slick-box-wrapper-img {
+    width: 8.6rem;
+}
+
+.voice__container-customer-slick-box-wrapper-review-name {
+    color: #fa7da3;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+
+.voice__container-customer-slick-box-wrapper-review-text {
+    color: #333;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 1.401rem;
+}
+
+.slick-dots li button:before {
+    font-size: 18px;
+    top: 14px;
+    left: 0;
+}
+
+/*フッター
+------------------------------------------ */
+.footer {
+    background-color: #fa7da3;
+    padding: 1.5rem 0 1.1rem 0;
+    text-align: center;
+}
+
+.footer-img {
+    width: 7.2rem;
+    margin: 0 auto;
 }
