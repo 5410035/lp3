@@ -1,6 +1,6 @@
 $(function () {
     $(".voice__container-customer-slick").slick({
-        arrows: true,
+        arrows: false,
         autoplay: false,
         adaptiveHeight: true,
         dots: true,
@@ -9,6 +9,16 @@ $(function () {
         fade: false,
         initialSlide: 1,
         centerMode: true,
-        centerPadding: "2.3rem",
+        centerPadding: "31.75rem",
+        responsive: [
+            {
+                breakpoint: 767.9,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    centerPadding: "3.18rem",
+                },
+            },
+        ],
     });
 });
