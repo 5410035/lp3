@@ -56,7 +56,7 @@ ul {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 2;
+    z-index: 3;
     background-color: #fff;
     column-gap: 0.6rem;
     padding-top: 1rem;
@@ -140,6 +140,12 @@ ul {
     }
 }
 
+@media (min-width:768px) {
+    .button__pink:hover {
+        opacity: .8;
+    }
+}
+
 .button__pink-text {
     color: #fff;
     font-family: 'Noto Sans JP', sans-serif;
@@ -198,6 +204,12 @@ ul {
         padding-top: .4rem;
         padding-left: 2.4rem;
         margin-right: .3rem;
+    }
+}
+
+@media (min-width:768px) {
+    .button__green :hover {
+        opacity: .8;
     }
 }
 
@@ -949,21 +961,23 @@ ul {
 ------------------------------------------ */
 
 .trial {
-    padding-left: 2rem;
-    padding-right: 1.9rem;
     margin-bottom: 3.6rem;
 }
 
 @media (min-width: 768px) {
     .trial {
-        padding-left: 2rem;
-        padding-right: 1.9rem;
         margin-bottom: 5.3rem;
     }
 }
 
+.trial__container {
+    width: 35rem;
+    margin: 0 auto;
+}
+
 @media (min-width: 768px) {
     .trial__container {
+        width: 57.1rem;
         max-width: 57.2rem;
         margin: 0 auto;
     }
@@ -1499,7 +1513,6 @@ ul {
     border: .1rem solid #fa7da3;
     border-radius: 0 0 1rem 1rem;
     padding-bottom: 1.3rem;
-    width: 35rem;
     margin-bottom: 3rem;
 }
 
@@ -1510,7 +1523,6 @@ ul {
         border: .1rem solid #fa7da3;
         border-radius: 0 0 1rem 1rem;
         padding-bottom: 3.1rem;
-        width: 78rem;
         margin-bottom: 5rem;
     }
 }
@@ -2171,7 +2183,6 @@ ul {
 
 .voice__container {
     padding-top: 2rem;
-    padding-bottom: 1.5rem;
 }
 
 @media (min-width: 768px) {
@@ -2250,7 +2261,7 @@ ul {
 
 .voice__container-customer {
     overflow: hidden;
-    padding-bottom: 1rem;
+    padding-bottom: 2.5rem;
 }
 
 /*お客様の声slick
@@ -2362,6 +2373,9 @@ ul {
     opacity: 1;
 }
 
+.slick-dots li {
+    width: 2rem;
+}
 
 @media (min-width: 768px) {
     .slick-dots li button:before {

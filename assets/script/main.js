@@ -16,7 +16,7 @@ $(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerPadding: "3.18rem",
+                    centerPadding: "3.1rem",
                 },
             },
         ],
