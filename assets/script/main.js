@@ -9,14 +9,13 @@ $(function () {
         fade: false,
         initialSlide: 1,
         centerMode: true,
-        centerPadding: "31.75rem",
+        centerPadding: "0rem",
         responsive: [
             {
                 breakpoint: 767.9,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerPadding: "3.1rem",
                 },
             },
         ],
