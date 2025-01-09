@@ -69,10 +69,11 @@ ul {
     .header {
         display: flex;
         flex-direction: row;
-        justify-content: center;
-        column-gap: 41.6rem;
+        justify-content: space-around;
+        column-gap: 2.3rem;
         padding-top: 1.7rem;
-        padding-left: .3rem;
+        padding-left: 1.2rem;
+        padding-right: .9rem;
         margin-bottom: 2rem;
         height: 9.2rem;
     }
@@ -85,13 +86,11 @@ ul {
 
 .header__logo-img {
     width: 7.2rem;
-    color: #fa7da3;
 }
 
 @media (min-width:768px) {
     .header__logo-img {
         width: 9.7rem;
-        color: #fa7da3;
     }
 }
 
@@ -119,7 +118,7 @@ ul {
     height: 3.1rem;
     background-color: #fa7da3;
     text-align: center;
-    border-radius: 1.55rem;
+    border-radius: 1.6rem;
     padding-top: .4rem;
     padding-left: 1.2rem;
 }
@@ -129,11 +128,11 @@ ul {
         display: flex;
         flex-direction: row;
         column-gap: 1.1rem;
-        width: 18.91rem;
-        height: 5.036rem;
+        width: 18.9rem;
+        height: 5rem;
         background-color: #fa7da3;
         text-align: center;
-        border-radius: 2.518rem;
+        border-radius: 2.6rem;
         padding-top: 0.6rem;
         padding-left: 2.5rem;
         margin-left: .6rem;
@@ -159,7 +158,7 @@ ul {
         color: #fff;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 2.112rem;
+        font-size: 2.1rem;
         letter-spacing: 0rem;
     }
 }
@@ -173,7 +172,7 @@ ul {
 @media (min-width:768px) {
     .button__pink-arrow {
         color: #fff;
-        height: 1.636rem;
+        height: 1.6rem;
         margin-top: 1.1rem;
     }
 }
@@ -186,7 +185,7 @@ ul {
     height: 3.1rem;
     background-color: #49c43d;
     text-align: center;
-    border-radius: 1.55rem;
+    border-radius: 1.6rem;
     padding-top: .4rem;
     padding-left: 1.2rem;
 }
@@ -196,11 +195,11 @@ ul {
         display: flex;
         flex-direction: row;
         column-gap: .8rem;
-        width: 29.549rem;
-        height: 5.036rem;
+        width: 29.4rem;
+        height: 5rem;
         background-color: #49c43d;
         text-align: center;
-        border-radius: 2.518rem;
+        border-radius: 2.5rem;
         padding-top: .4rem;
         padding-left: 2.4rem;
         margin-right: .3rem;
@@ -226,7 +225,7 @@ ul {
         color: #fff;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 2.112rem;
+        font-size: 2.1rem;
         letter-spacing: -0.03rem;
     }
 }
@@ -244,7 +243,7 @@ ul {
         color: #fff;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 1.787rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -259,7 +258,7 @@ ul {
     .button__green-arrow {
         color: #fff;
         font-size: .6rem;
-        height: 1.636rem;
+        height: 1.6rem;
         margin-top: 1.3rem;
     }
 }
@@ -302,16 +301,6 @@ ul {
     }
 }
 
-.cover__container-catch {
-    margin-bottom: 2rem;
-}
-
-@media (min-width: 768px) {
-    .cover__container-catch {
-        margin-bottom: 5.2rem;
-    }
-}
-
 .cover__container-left-text {
     position: absolute;
     width: 16.5rem;
@@ -349,7 +338,7 @@ ul {
         display: flex;
         flex-direction: row;
         background-color: #fca4bf;
-        width: 42.302rem;
+        width: 42.3rem;
         margin-left: auto;
         padding-top: 1.2rem;
         padding-left: 5.8rem;
@@ -494,10 +483,10 @@ ul {
         color: #fa7da3;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
-        font-size: 2.925rem;
+        font-size: 2.9rem;
         text-align: center;
-        width: 10.576rem;
-        height: 5.165rem;
+        width: 10.6rem;
+        height: 5.2rem;
         padding-left: .1rem;
     }
 }
@@ -522,13 +511,14 @@ ul {
 }
 
 .cover__container-catch-left--text {
+    display: block;
     color: #fff;
     font-family: 'Outfit', sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
-    display: block;
     text-align: end;
     margin-right: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -536,11 +526,12 @@ ul {
         color: #fff;
         font-family: 'Outfit', sans-serif;
         font-weight: 400;
-        font-size: 2.648rem;
+        font-size: 2.6rem;
         display: block;
         text-align: end;
         margin-right: 6.3rem;
         line-height: 1;
+        margin-bottom: 5.2rem;
     }
 }
 
@@ -556,21 +547,21 @@ ul {
         color: #fff;
         font-family: 'Outfit', sans-serif;
         font-weight: 400;
-        font-size: 1.702rem;
+        font-size: 1.7rem;
     }
 }
 
 .cover__container-left-women {
     position: absolute;
-    top: 34.2%;
     left: 1%;
     width: 20.9rem;
+    bottom: -10.7%;
 }
 
 @media (min-width: 768px) {
     .cover__container-left-women {
         position: absolute;
-        top: 19.4%;
+        top: 19.2%;
         left: 0.1%;
         width: 48.6rem;
         z-index: 1;
@@ -674,8 +665,8 @@ ul {
 
 .now__container-text::after {
     content: "";
-    width: 0.225rem;
-    height: 2.675rem;
+    width: 0.2rem;
+    height: 2.7rem;
     display: block;
     background-color: #fa7da3;
     transform: rotate(30deg);
@@ -685,8 +676,8 @@ ul {
 @media (min-width: 768px) {
     .now__container-text::after {
         content: "";
-        width: 0.325rem;
-        height: 4.275rem;
+        width: 0.3rem;
+        height: 4.3rem;
         display: block;
         background-color: #fa7da3;
         transform: rotate(30deg);
@@ -697,8 +688,8 @@ ul {
 
 .now__container-text::before {
     content: "";
-    width: 0.225rem;
-    height: 2.675rem;
+    width: 0.2rem;
+    height: 2.7rem;
     display: block;
     background-color: #fa7da3;
     transform: rotate(-30deg);
@@ -708,8 +699,8 @@ ul {
 @media (min-width: 768px) {
     .now__container-text::before {
         content: "";
-        width: 0.325rem;
-        height: 4.275rem;
+        width: 0.3rem;
+        height: 4.3rem;
         display: block;
         background-color: #fa7da3;
         transform: rotate(-30deg);
@@ -792,7 +783,7 @@ ul {
         background-color: #fff;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 4.367rem;
+        font-size: 4.4rem;
         text-align: center;
     }
 }
@@ -821,8 +812,9 @@ ul {
 ------------------------------------------ */
 
 .cta {
+    display: block;
     padding-top: 1rem;
-    margin-bottom: 2.95rem;
+    margin-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
@@ -879,9 +871,9 @@ ul {
         flex-direction: row;
         justify-content: space-around;
         background-color: #49c43d;
-        width: 57.058rem;
-        height: 13.01rem;
-        border-radius: 6.505rem;
+        width: 57rem;
+        height: 13rem;
+        border-radius: 6.5rem;
         column-gap: .7rem;
         margin-left: auto;
         margin-right: auto;
@@ -915,7 +907,7 @@ ul {
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         font-size: 3.4rem;
-        width: 35.747rem;
+        width: 35.8rem;
         line-height: 1.3;
         letter-spacing: 0.37rem;
         margin-left: 3.1rem;
@@ -933,8 +925,8 @@ ul {
 @media (min-width: 768px) {
     .button__button-arrow {
         color: #fff;
-        width: 1.958rem;
-        height: 3.101rem;
+        width: 2rem;
+        height: 3.1rem;
         margin-top: 3.1rem;
         margin-right: .9rem;
     }
@@ -1033,7 +1025,7 @@ ul {
         color: #333;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 2.286rem;
+        font-size: 2.3rem;
         margin-left: 0rem;
         letter-spacing: -0.02rem;
     }
@@ -1068,9 +1060,9 @@ ul {
         color: #333;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 2.286rem;
+        font-size: 2.3rem;
         margin-left: 0rem;
-        letter-spacing: -0.02rem;
+        letter-spacing: -0.03rem;
     }
 }
 
@@ -1086,7 +1078,7 @@ ul {
         color: #333;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 1.796rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -1126,13 +1118,13 @@ ul {
 
 .point__container-title {
     text-align: center;
-    margin-bottom: 1.9rem;
+    margin-bottom: 2.2rem;
 }
 
 @media (min-width: 768px) {
     .point__container-title {
         text-align: center;
-        margin-bottom: 4.2rem;
+        margin-bottom: 4.7rem;
     }
 }
 
@@ -1178,9 +1170,18 @@ ul {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 700;
     font-size: 3.2rem;
-    line-height: 1.7;
+    line-height: 1.5;
     letter-spacing: 0.15rem;
-    margin-right: -0.43rem;
+}
+
+.point__container-title-point-t {
+    letter-spacing: -1.1rem;
+}
+
+@media (min-width: 768px) {
+    .point__container-title-point-t {
+        letter-spacing: -.9rem;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1189,10 +1190,10 @@ ul {
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
         font-size: 4.2rem;
-        line-height: 1.7;
+        line-height: 1.5;
         letter-spacing: 0rem;
-        margin-right: -0.43rem;
         margin-top: .3rem;
+        margin-left: .7rem;
     }
 }
 
@@ -1207,7 +1208,7 @@ ul {
         display: flex;
         justify-content: center;
         margin-right: .3rem;
-        column-gap: .8rem;
+        column-gap: .1rem;
     }
 }
 
@@ -1220,23 +1221,25 @@ ul {
 
 @media (min-width: 768px) {
     .point__container-title-wrapper-leftstar {
-        width: 4.959rem;
-        height: 6.109rem;
+        width: 5rem;
+        height: 6.1rem;
         margin-top: .8rem;
+        margin-left: .2rem;
     }
 }
 
 .point__container-title-wrapper-rightstar {
-    width: 3.731rem;
+    width: 3.7rem;
     height: 4.6rem;
     margin-top: .5rem;
 }
 
 @media (min-width: 768px) {
     .point__container-title-wrapper-rightstar {
-        width: 4.959rem;
-        height: 6.109rem;
-        margin-top: .8rem;
+        width: 5rem;
+        height: 6.1rem;
+        margin-top: .5rem;
+        margin-left: .3rem;
     }
 }
 
@@ -1430,7 +1433,7 @@ ul {
         color: #433e3f;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 2.903rem;
+        font-size: 2.9rem;
     }
 }
 
@@ -1615,63 +1618,15 @@ ul {
 .point__container-point2-detail-wrapper-body-img1 {
     position: absolute;
     left: 37.9%;
-    width: 8.2rem;
+    width: 19.9rem
 }
 
 @media (min-width: 768px) {
     .point__container-point2-detail-wrapper-body-img1 {
         position: absolute;
         left: 38.5%;
-        width: 11.3rem;
-        top: 12%;
-    }
-}
-
-.point__container-point2-detail-wrapper-body-img2 {
-    position: absolute;
-    top: 25%;
-    left: 82.7%;
-    width: 3.4rem;
-}
-
-@media (min-width: 768px) {
-    .point__container-point2-detail-wrapper-body-img2 {
-        position: absolute;
-        top: 20.3%;
-        left: 72.4%;
-        width: 4.363em
-    }
-}
-
-.point__container-point2-detail-wrapper-body-img3 {
-    position: absolute;
-    top: 36.7%;
-    left: 86.6%;
-    width: 2.3rem;
-}
-
-@media (min-width: 768px) {
-    .point__container-point2-detail-wrapper-body-img3 {
-        position: absolute;
-        top: 32.1%;
-        left: 78.3%;
-        width: 2.965rem;
-    }
-}
-
-.point__container-point2-detail-wrapper-body-img4 {
-    position: absolute;
-    top: 66.1%;
-    left: 82.6%;
-    width: 4.4rem;
-}
-
-@media (min-width: 768px) {
-    .point__container-point2-detail-wrapper-body-img4 {
-        position: absolute;
-        top: 45.7%;
-        left: 80.2%;
-        width: 5.786rem;
+        width: 38.2rem;
+        top: 12.3%;
     }
 }
 
@@ -1849,7 +1804,7 @@ ul {
 @media (min-width: 768px) {
     .course {
         background-color: #fff;
-        padding-top: 1rem;
+        padding-top: 0rem;
         padding-left: 2.1rem;
         padding-right: 1.9rem;
         padding-bottom: .1rem;
@@ -1914,21 +1869,21 @@ ul {
         color: #fa7da3;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
-        font-size: 4.175rem;
+        font-size: 4.2rem;
         line-height: 1.7;
     }
 }
 
 .course__container-title-wrapper-leftstar {
-    width: 3.731rem;
-    height: 4.622rem;
+    width: 3.7rem;
+    height: 4.6rem;
     margin-top: .3rem;
 }
 
 
 @media (min-width: 768px) {
     .course__container-title-wrapper-leftstar {
-        width: 4.966rem;
+        width: 5rem;
         height: 6.1rem;
         margin-top: .5rem;
         margin-left: 0rem;
@@ -1936,8 +1891,8 @@ ul {
 }
 
 .course__container-title-wrapper-rightstar {
-    width: 3.731rem;
-    height: 4.622rem;
+    width: 3.7rem;
+    height: 4.6rem;
     margin-top: .3rem;
     margin-right: .3rem;
 }
@@ -1945,7 +1900,7 @@ ul {
 
 @media (min-width: 768px) {
     .course__container-title-wrapper-rightstar {
-        width: 4.966rem;
+        width: 5rem;
         height: 6.1rem;
         margin-top: .5rem;
         margin-right: 0rem;
@@ -2067,7 +2022,7 @@ ul {
 
 @media (min-width: 768px) {
     .course__container-box-body-image-img {
-        width: 31.17rem;
+        width: 31.2rem;
     }
 }
 
@@ -2167,7 +2122,7 @@ ul {
 
 @media (min-width: 768px) {
     .course__container-box-face-image-img {
-        width: 31.17rem;
+        width: 31.2rem;
     }
 }
 
@@ -2231,34 +2186,34 @@ ul {
         color: #fa7da3;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 700;
-        font-size: 4.171rem;
+        font-size: 4.2rem;
         line-height: 1.7;
     }
 }
 
 .voice__container-title-leftstar {
-    width: 3.731rem;
-    height: 4.622rem;
+    width: 3.7rem;
+    height: 4.6rem;
     margin-top: .5rem;
 }
 
 @media (min-width: 768px) {
     .voice__container-title-leftstar {
-        width: 4.953rem;
+        width: 5rem;
         height: 6.2rem;
         margin-top: .4rem;
     }
 }
 
 .voice__container-title-rightstar {
-    width: 3.731rem;
-    height: 4.622rem;
+    width: 3.7rem;
+    height: 4.6rem;
     margin-top: .5rem;
 }
 
 @media (min-width: 768px) {
     .voice__container-title-rightstar {
-        width: 4.953rem;
+        width: 5rem;
         height: 6.2rem;
         margin-top: .4rem;
     }
@@ -2302,13 +2257,13 @@ ul {
     }
 }
 
-.voice__container-customer-slick-box-text {
+.voice__slick-box-text {
     background-color: #fa7da3;
     padding: 1.2rem 0 1.5rem 0;
     border-radius: .9rem .9rem 0 0;
 }
 
-.voice__container-customer-slick-box-text-course {
+.voice__slick-box-text-course {
     color: #fff;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
@@ -2356,7 +2311,7 @@ ul {
     color: #333;
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 400;
-    font-size: 1.401rem;
+    font-size: 1.4rem;
     line-height: 1.47;
 }
 
@@ -2365,7 +2320,7 @@ ul {
         color: #333;
         font-family: 'Noto Sans JP', sans-serif;
         font-weight: 400;
-        font-size: 1.401rem;
+        font-size: 1.4rem;
         line-height: 1.47;
         margin-left: 0rem;
     }
